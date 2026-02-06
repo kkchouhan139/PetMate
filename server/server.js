@@ -74,6 +74,9 @@ const io = socketIo(server, {
     methods: ["GET", "POST"]
   }
 });
+app.get("/", (req, res) => {
+  res.send("🚀 PetMate Backend is running");
+});
 
 // Middleware
 app.use(cors(corsOptions));
