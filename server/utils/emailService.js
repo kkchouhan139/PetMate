@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
 const port = Number(process.env.EMAIL_PORT || 587);
+console.log('SMTP_HOST', process.env.EMAIL_HOST, 'SMTP_PORT', process.env.EMAIL_PORT);
 
 const transporter = nodemailer.createTransport({
   host: process.env.EMAIL_HOST,
