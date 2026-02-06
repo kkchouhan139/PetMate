@@ -1,11 +1,11 @@
-import React from 'react';
+﻿import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Mail, Phone, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4 py-6">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
@@ -26,6 +26,7 @@ const Footer = () => {
               <li><Link to="/search" className="text-gray-300 hover:text-white transition-colors">Search Pets</Link></li>
               <li><Link to="/register" className="text-gray-300 hover:text-white transition-colors">Join Now</Link></li>
               <li><Link to="/login" className="text-gray-300 hover:text-white transition-colors">Login</Link></li>
+              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors">Careers</Link></li>
             </ul>
           </div>
 
@@ -66,9 +67,9 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <div className="border-t border-gray-700 mt-5 pt-5 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2024 PetMate. All rights reserved.
+            Â© 2024 PetMate. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="text-gray-400 hover:text-white text-sm transition-colors">Privacy Policy</a>
@@ -82,3 +83,6 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+

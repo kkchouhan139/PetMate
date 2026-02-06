@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import { AuthProvider } from './context/AuthContext';
@@ -19,6 +19,7 @@ import Matches from './pages/Matches';
 import Chat from './pages/Chat';
 import Profile from './pages/Profile';
 import AdminPanel from './pages/AdminPanel';
+import Careers from './pages/Careers';
 
 function App() {
   return (
@@ -63,6 +64,7 @@ function App() {
                 } />
                 <Route path="/pet/:id" element={<PetProfile />} />
                 <Route path="/search" element={<Search />} />
+                <Route path="/careers" element={<Careers />} />
                 <Route path="/matches" element={
                   <RequireAuth>
                     <Matches />
@@ -118,3 +120,4 @@ function App() {
 }
 
 export default App;
+
